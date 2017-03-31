@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+background-image: url(images/paper.jpg);
+}
+
+h1 {
+	
+}
+
+h2 {
+	
+}
+
+h3 {
+	
+}
+
+#box {
+	height: 800px;
+	width: 1150px;
+	position: relative;
+	top: 30px;
+}
+
+#header {
+	height: 150px;
+	width: 1100px;
+	background-image: url(images/Headerfinal.png);
+	position: relative;
+	top: 10px;
+	left: 25px;
+	border-radius: 16px;
+
+}
+
+.keys {
+	position: relative;
+	top: 0px;
+	margin: 30px 20px 0px 0px;
+}
+.used.button.letter {
+	display: none;
+	background-color: white;
+}
+#keybox {
+	background-color: rgba(76, 198, 255, 0.4); 
+	float: left;
+	width: 700px;
+	height: 190px;
+	border-radius: 16px;
+	margin: 10px 0px 0px 10px;
+}
+#sidebox {
+	background-color: rgba(76, 198, 255, 0.4);
+	height: 650px;
+	width: 170px;
+	float: left;
+	border-radius: 16px;
+	margin: 25px 20px 25px 25px;
+}
+
+#gen {
+   display: inline-block;
+   padding: 7px 15px;
+   font-size: 20px;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   outline: none;
+   color: #fff;
+   background-color: #EDE6C7 ;
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 7px #C7BF9D ;
+    color: black;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+#gen:hover {background-color: #DED7B6 }
+
+#gen:active {
+   background-color: #DED7B6 ;
+   box-shadow: 0 5px #B2AC8D ;
+   transform: translateY(4px);
+}
+.button.category {
+	cursor: pointer;
+	margin-top: 10px;
+	border-radius: 8px;
+	width: 100px;
+	height: 50px;
+	top: 80px;
+	left: 40%;
+	color: white;
+}
+
+#food {
+	background-image: url(images/macandcheese.png);
+}
+
+#sports {
+	background-image: url(images/esports.png);
+}
+
+#animals {
+	background-image: url(images/eanimal.png);
+}
+
+#countries {
+	background-image: url(images/eworld.png);
+}
+
+#easy {
+	background-color: rgba(10,239,76,1.00);
+}
+
+#normal {
+	background-color: rgba(11,158,237,1.00);
+}
+
+#hard {
+	background-color: rgba(216,9,236,1.00);
+}
+
+#side {
+	margin-top: none;
+	border: none;
+	border-radius: 16px;
+	margin-left: 17px;
+	cursor: pointer;
+	border-top: 2px solid transparent;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-style: oblique;
+}
+
+	
+.button {
+	width: 40px;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	margin-left: 17px;
+	cursor: pointer;
+	border-top: 2px solid transparent;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	text-align: center;
+}
+.button.letter {
+	background-color: white;
+	font-style: oblique;
+}
+
+#hangman {
+	background-color: rgba(76, 198, 255, 0.4);
+	width: 700px;
+	height: 450px;
+	float: left;
+	margin: 25px 0px 0px 10px;
+	border-radius: 16px;
+}
+
+#guessed {
+	background-color: rgba(76, 198, 255, 0.4);
+	height: 650px;
+	width: 170px;
+	border-radius: 16px;
+	float: right;
+	margin: 25px 25px 1px 5px;
+}
+
+.food {
+}
+
+#words {
+	font-size: 20px;
+}
+
+.font {
+	font-family: 'Handlee';
+	font-style:normal;
+	text-align: left;
+}
+
+@media screen and (max-width: 980px) {
+	#box {
+		width: 94%;
+	}
+	#header {
+		width: 95%;
+	}
+	#hangman {
+		width: 60%;
+		height: 47%;
+		margin: none;
+	}
+	#hangmanpng {
+		height: 200px;
+	}
+	#sidebox input {
+		height: 35px;
+		width: 70px;
+	}
+	#sidebox, #guessed {
+		width: 130px;
+		height: 550px;	
+		margin: none;
+	}
+	#keybox {
+		width: 60%;
+		height: 20%;
+		margin: none;
+	}
+	.button {
+		width: 6%;
+		height: 35%;
+	}
+	.used button letter {
+		width: 6%;
+		height: 35%;		
+	}
+}
+
+@media screen and (max-width: 700px) {
+		
+	#box {
+		width: 94%;
+	}
+	#header {
+		width: 100px;
+		height: 700px;
+	}
+	#hangman {
+		width: 20%;
+		height: 30%;
+	}
+	#sidebox input {
+		height: 20px;
+		width: 40px;
+	}
+	#sidebox, #guessed {
+		width: 100px;
+		height: 500px;	
+	}
+	.used button letter {
+		
+	}
+}
+
+@media screen and (max-width: 480px) {
+	
+	#header {
+	
+	}
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+	
+}

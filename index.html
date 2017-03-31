@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Web App</title>
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+		<!--Stylesheet-->
+		<link rel="stylesheet" type="text/css" href="webapp.css">
+		<!--JavaScript-->	
+		<script type="text/javascript" src="webapp.js"></script>
+		<!--jQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	
+	<body>
+    <p>&nbsp;</p>
+
+		<!--Add your HTML here-->
+<div id="box">
+	<p id="test"></p>
+	
+	<div id="header"> </div>
+	
+	<div id="sidebox">
+		<h2 class="font" style="text-align: center;"> Categories</h2>
+		<div id= "side">
+	
+		 
+	<input type="button" value="Sports" class="button category" id="sports" onClick="s()"><br>
+	<input type="button" value="Animals" class="button category" id="animals" onClick="a()"><br>
+	<input type="button" value="Countries" class="button category" id="countries" onClick="c()">
+	<input type="button" value="Food" class="button category" id="food" onClick="f()">
+
+	<h2 class="font" style="text-align: center;"> Difficulties </h2>
+	<input type="button" value="Easy" class="button category" id="easy" onClick="difficulty('easy')">
+	<input type="button" value="Normal" class="button category" id="normal" style="border: solid bisque 4px" onClick="difficulty('normal')">
+	<input type="button" value="Hard" class="button category" id="hard" onClick="difficulty('hard')">
+		</div> <!-- side -->
+	</div> <!-- sidebox -->
+	
+	<div id="hangman" style="text-align: center;"> <br>
+		<input type="button" value="Generate Word" id="gen" onclick="gen()">
+		<p class="font" id="movesLeftP" style="text-align: center">Chances Left: 7</p>
+		<p class= "font" id="scores" style="text-align: center;">Wins: 0 | Losses: 0<p>
+		<img src="images/Hangman.png" height="210" id="hangmanpng" alt=""/>
+		<p id="words"></p>
+	
+
+		<div class="keys" id="keys">
+			<div style="text-align: center;">
+			</div> <!-- style -->
+		</div> <!-- keys -->
+	</div> <!-- style -->
+	
+		<div id="guessed">
+			<h2 style="text-align: center;" class="font"> Guessed <br> Letters</h2>
+		
+			<input type= "button" class= "used button letter" value= "A"  id = "a_used">
+			<input type= "button" class= "used button letter" value= "B"  id = "b_used">
+			<input type= "button" class= "used button letter" value= "C"  id = "c_used">
+			<input type= "button" class= "used button letter" value= "D"  id = "d_used">
+			<input type= "button" class= "used button letter" value= "E"  id = "e_used">
+			<input type= "button" class= "used button letter" value= "F"  id = "f_used">
+			<input type= "button" class= "used button letter" value= "G"  id = "g_used">
+			<input type= "button" class= "used button letter" value= "H"  id = "h_used">
+			<input type= "button" class= "used button letter" value= "I"  id = "i_used">
+			<input type= "button" class= "used button letter" value= "J"  id = "j_used">
+		
+		
+			<input type= "button" class= "used button letter" value= "K"  id = "k_used">
+			<input type= "button" class= "used button letter" value= "L"  id = "l_used">
+			<input type= "button" class= "used button letter" value= "M"  id = "m_used">
+			<input type= "button" class= "used button letter" value= "N"  id = "n_used">
+			<input type= "button" class= "used button letter" value= "O"  id = "o_used">
+			<input type= "button" class= "used button letter" value= "P"  id = "p_used">
+			<input type= "button" class= "used button letter" value= "Q"  id = "q_used">
+			<input type= "button" class= "used button letter" value= "R"  id = "r_used">
+			<input type= "button" class= "used button letter" value= "S"  id = "s_used">
+			<input type= "button" class= "used button letter" value= "T"  id = "t_used">
+		
+
+		
+			<input type= "button" class= "used button letter" value= "U"  id = "u_used">
+			<input type= "button" class= "used button letter" value= "V"  id = "v_used">
+			<input type= "button" class= "used button letter" value= "W"  id = "w_used">
+			<input type= "button" class= "used button letter" value= "X"  id = "x_used">
+			<input type= "button" class= "used button letter" value= "Y"  id = "y_used">
+			<input type= "button" class= "used button letter" value= "Z"  id = "z_used">
+		
+	</div>
+	
+	<div id="keybox">
+		<div class="keys">
+			<div style="text-align: center;">
+				<p>
+				<input type= "button" class= "button letter" value= "A" onClick="v('A')" id = "a">
+				<input type= "button" class= "button letter" value= "B" onClick="v('B')" id = "b">
+				<input type= "button" class= "button letter" value= "C" onClick="v('C')" id = "c">
+				<input type= "button" class= "button letter" value= "D" onClick="v('D')" id = "d">
+				<input type= "button" class= "button letter" value= "E" onClick="v('E')" id = "e">
+				<input type= "button" class= "button letter" value= "F" onClick="v('F')" id = "f">
+				<input type= "button" class= "button letter" value= "G" onClick="v('G')" id = "g">
+				<input type= "button" class= "button letter" value= "H" onClick="v('H')" id = "h">
+				<input type= "button" class= "button letter" value= "I" onClick="v('I')" id = "i">
+				<input type= "button" class= "button letter" value= "J" onClick="v('J')" id = "j">
+			</p>
+			<p>
+				<input type= "button" class= "button letter" value= "K" onClick="v('K')" id = "k">
+				<input type= "button" class= "button letter" value= "L" onClick="v('L')" id = "l">
+				<input type= "button" class= "button letter" value= "M" onClick="v('M')" id = "m">
+				<input type= "button" class= "button letter" value= "N" onClick="v('N')" id = "n">
+				<input type= "button" class= "button letter" value= "O" onClick="v('O')" id = "o">
+				<input type= "button" class= "button letter" value= "P" onClick="v('P')" id = "p">
+				<input type= "button" class= "button letter" value= "Q" onClick="v('Q')" id = "q">
+				<input type= "button" class= "button letter" value= "R" onClick="v('R')" id = "r">
+				<input type= "button" class= "button letter" value= "S" onClick="v('S')" id = "s">
+				<input type= "button" class= "button letter" value= "T" onClick="v('T')" id = "t">
+		</p>
+		<p>
+				<input type= "button" class= "button letter" value= "U" onClick="v('U')" id = "u">
+				<input type= "button" class= "button letter" value= "V" onClick="v('V')" id = "v">
+				<input type= "button" class= "button letter" value= "W" onClick="v('W')" id = "w">
+				<input type= "button" class= "button letter" value= "X" onClick="v('X')" id = "x">
+				<input type= "button" class= "button letter" value= "Y" onClick="v('Y')" id = "y">
+				<input type= "button" class= "button letter" value= "Z" onClick="v('Z')" id = "z">
+		</p>
+				</div> <!-- style -->
+			</div> <!-- keys -->
+	</div> <!-- keybox -->
+</div> <!-- box -->
+      </body>
+    </html>
+
+	
